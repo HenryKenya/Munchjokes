@@ -68,6 +68,7 @@ GEM
     nio4r (2.1.0)
     nokogiri (1.8.0)
       mini_portile2 (~> 2.2.0)
+    pg (0.21.0)
     puma (3.9.1)
     rack (2.0.3)
     rack-test (0.6.3)
@@ -100,6 +101,9 @@ GEM
     rb-inotify (0.9.10)
       ffi (>= 0.5.0, < 2)
     ruby_dep (1.5.0)
+    seed_dump (3.2.4)
+      activerecord (>= 4)
+      activesupport (>= 4)
     spring (2.0.2)
       activesupport (>= 4.2)
     spring-watcher-listen (2.0.1)
@@ -117,6 +121,7 @@ GEM
     thread_safe (0.3.6)
     tzinfo (1.2.3)
       thread_safe (~> 0.1)
+    valkyrie (0.0.0)
     websocket-driver (0.6.5)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.2)
@@ -128,12 +133,15 @@ DEPENDENCIES
   byebug
   jsonapi-resources (~> 0.9.0)
   listen (>= 3.0.5, < 3.2)
+  pg
   puma (~> 3.7)
   rails (~> 5.1.2)
+  seed_dump
   spring
   spring-watcher-listen (~> 2.0.0)
   sqlite3
   tzinfo-data
+  valkyrie (~> 0.0.0)
 
 BUNDLED WITH
    1.14.6

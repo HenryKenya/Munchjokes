@@ -6,13 +6,14 @@ git_source(:github) do |repo_name|
 end
 
 gem 'rails', '~> 5.1.2'
-gem 'sqlite3'
+
 gem 'puma', '~> 3.7'
 gem 'jsonapi-resources', '~> 0.9.0'
-
+gem 'valkyrie', '~> 0.0.0'
+gem 'seed_dump'
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
-  
+  gem 'sqlite3'
 end
 
 group :development do
@@ -22,5 +23,8 @@ group :development do
   
 end
 
+group :production do
+  gem 'pg'
+end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
