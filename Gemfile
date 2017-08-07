@@ -11,6 +11,7 @@ gem 'puma', '~> 3.7'
 gem 'jsonapi-resources', '~> 0.9.0'
 gem 'valkyrie', '~> 0.0.0'
 gem 'seed_dump'
+gem 'rack-cors'
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'sqlite3'
